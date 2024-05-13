@@ -5,3 +5,4 @@ tweetnlp
 selenium==4.20.0
 seleniumbase
 webdriver-manager
+selenium.webdriver
