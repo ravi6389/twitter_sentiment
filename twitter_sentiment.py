@@ -23,12 +23,12 @@ import tweetnlp
 df = pd.DataFrame()
 
 def login_twitter(username_text, password_text, topic_text):
+    options = ChromeOptions()
+    ptions.use_chromium = True
+    river = Chrome()
     # options = ChromeOptions()
     # options.use_chromium = True
-    # driver = Chrome()
-    options = ChromeOptions()
-    options.use_chromium = True
-    driver = webdriver.Chrome()
+    # driver = webdriver.Chrome()
     driver.get('https://twitter.com/i/flow/login')
     time.sleep(5)
     username = driver.find_element("xpath",'//input[@name="text"]')
